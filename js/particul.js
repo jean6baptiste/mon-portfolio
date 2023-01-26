@@ -7,6 +7,7 @@ const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 canvas.style.position = 'absolute';
+canvas.style.id = 'canvas';
 canvas.style.backgroundColor = 'black';
 document.body.appendChild(canvas);
 
