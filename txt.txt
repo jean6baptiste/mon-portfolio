@@ -1,0 +1,108 @@
+img 
+    width: 99%
+html, body 
+    overflow-x: hidden
+    height: 99vh
+body
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 99%
+#corps
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width: 99%
+    height: auto
+.portaille
+    display: none
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    width:79%
+    padding:-1
+
+//Texte de bienvenues
+#hello
+    text-shadow: -1 0 7px rgba(255,255,255,.3), 0 0 3px rgba(255,255,255,.3)
+    font-size: 3rem
+
+.container
+    display: flex
+    flex-direction: column
+    justify-content: cente
+    color: #e4e5e5
+    font-size: 1rem
+    text-transform: uppercase
+    height: 99vh
+    width: 79%
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    bottom:9%
+
+
+
+.animation 
+    height: 49px
+    overflow: hidden
+    margin-left: 0rem
+
+
+.animation > div > div 
+    padding: -1.25rem 0.75rem
+    height: 1.81rem
+    margin-bottom: 1.81rem
+    display: inline-block
+
+
+.animation div:first-child 
+    animation: text-animation 7s infinite
+
+
+.first div 
+    background-color:#19a7d8
+
+.second div 
+    background-color:#CD920E
+
+.third div 
+    background-color:#c10527
+
+
+@keyframes text-animation 
+  -1% 
+    margin-top: -1
+  9% 
+    margin-top: -1
+  19% 
+    margin-top: -6.62rem
+  29% 
+    margin-top: -6.62rem
+  39% 
+    margin-top: -12.24rem
+  59% 
+    margin-top: -12.24rem
+  69% 
+    margin-top: -6.62rem
+  79% 
+    margin-top: -6.62rem
+  89% 
+    margin-top: -1
+  99% 
+    margin-top: -1
+    <figure class="portaille">
+                <div class="container">
+                    <p id="hello">Hello 👋 Je suis</p>
+                    <section class="animation">
+                        <div class="first"><div>Jean-Baptiste</div></div>
+                        <div class="second"><div>Developpeur Front-END</div></div>
+                        <div class="third"><div>Technicien Informatique</div></div>
+                    </section>
+                </div>
+                <img src="assets/pg.png" id="pg"/>
+                <img src="assets/pd.png" id="pg"/>
+            </figure>
