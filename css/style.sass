@@ -6,6 +6,10 @@ $hexagon-border-color: #fff
 $hexagon-border-color--hover: #72f88e
 $hexagon-image-color: #3ea0eb
 $honeycomb-max-width: 1200px
+$color_black :#000
+$color_white:#fff
+$color_gray: #9b9999
+$color_blue:#0c7bd0
 $viewport-thereshold: $hexagon-width + $hexagon-margin
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700')
@@ -22,7 +26,8 @@ body
 //FIN ENTTETE
 //corps
   #corps
-    margin-top: 50vh
+    margin: 50vh
+
 //FIN CORPS
 //Mes REALISATION
 .honeycomb 
@@ -61,8 +66,6 @@ body
       > small 
         font-weight: 300
         margin-top: 0.25em
-      
-    
 
     &__image 
       object-fit: cover
@@ -107,16 +110,16 @@ body
         opacity: 0
       
   &__placeholder
-    display:none
+    display: none
     opacity: 0
     width: $hexagon-width
-    margin: 0 $hexagon-margin/2
+    margin: 0  calc($hexagon-margin / 2)
   
 
 
 @media (max-width:2*$viewport-thereshold)
   .honeycomb-cell 
-    margin: $hexagon-margin/2 + $hexagon-height/2 $hexagon-margin
+    margin: calc($hexagon-margin / 2) + calc($hexagon-height / 2) $hexagon-margin
   
 
 
@@ -127,7 +130,7 @@ body
   
 
   .honeycomb__placeholder:nth-child(3n + 5) 
-    display:block
+    display: block
   
 
 
@@ -141,7 +144,7 @@ body
   
 
   .honeycomb__placeholder:nth-child(5n), .honeycomb__placeholder:nth-child(5n + 3) 
-    display:block
+    display: block
   
 
 
@@ -155,12 +158,13 @@ body
   
 
   .honeycomb__placeholder:nth-child(7n + 7), .honeycomb__placeholder:nth-child(7n + 9), .honeycomb__placeholder:nth-child(7n + 11)
-    display:block
+    display: block
 .travail
     display: flex
     flex-direction: column
     align-items: center
     border: 2px solid #000
+    height: 50vh
 .ligne1, .ligne2, .ligne3, .ligne4
     position: relative
     padding: 0px
@@ -173,3 +177,218 @@ body
     bottom: 120px
 
 //FIN REALISATION
+
+//formulaires de contact
+
+button, input
+    font-family: 'Montserrat', sans-serif
+    font-weight: 700
+    letter-spacing: 1.4px
+.background 
+    display: flex
+    margin: 20px 0px 0px 0px
+    height: 50vh
+
+
+.container 
+    flex: 0 1 700px
+    margin: auto
+    padding: 10px
+
+
+.screen 
+    position: relative
+    background: #3e3e3e
+    border-radius: 15px
+
+
+.screen:after 
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    left: 20px
+    right: 20px
+    bottom: 0
+    border-radius: 15px
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .4)
+    z-index: -1
+
+
+.screen-header 
+    display: flex
+    align-items: center
+    padding: 10px 20px
+    background: #4d4d4f
+    border-top-left-radius: 15px
+    border-top-right-radius: 15px
+
+
+.screen-header-left 
+    margin-right: auto
+
+
+.screen-header-button 
+    display: inline-block
+    width: 8px
+    height: 8px
+    margin-right: 3px
+    border-radius: 8px
+    background: white
+
+
+.screen-header-button.close 
+    background: #ed1c6f
+
+
+.screen-header-button.maximize 
+    background: #e8e925
+
+
+.screen-header-button.minimize 
+    background: #74c54f
+
+
+.screen-header-right 
+    display: flex
+
+
+.screen-header-ellipsis 
+    width: 3px
+    height: 3px
+    margin-left: 2px
+    border-radius: 8px
+    background: #999
+
+
+.screen-body 
+    display: flex
+
+
+.screen-body-item 
+    flex: 1
+    padding: 50px
+
+
+.screen-body-item.left 
+    display: flex
+    flex-direction: column
+
+
+.app-title 
+    display: flex
+    flex-direction: column
+    position: relative
+    color: $color_white
+    font-size: 26px
+
+
+.app-contact 
+    margin-top: auto
+    font-size: 1rem
+    color: $color_white
+
+
+.app-form-group 
+    margin-bottom: 15px
+
+
+.app-form-group.message 
+    margin-top: 40px
+
+
+.app-form-group.buttons 
+    margin-bottom: 0
+    text-align: right
+
+
+.app-form-control 
+    width: 100%
+    padding: 10px 0
+    background: none
+    border: none
+    border-bottom: 1px solid #666
+    color: #ddd
+    font-size: 14px
+    text-transform: uppercase
+    outline: none
+    transition: border-color .2s
+
+
+.app-form-control::placeholder 
+    color: #666
+
+
+.app-form-control:focus 
+    border-bottom-color: #ddd
+
+
+.app-form-button 
+    background: none
+    border: none
+    color: #ea1d6f
+    font-size: 14px
+    cursor: pointer
+    outline: none
+
+
+.app-form-button:hover 
+    color: #b9134f
+
+
+.credits 
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 20px
+    color: #ffa4bd
+    font-family: 'Roboto Condensed', sans-serif
+    font-size: 16px
+    font-weight: normal
+
+
+.credits-link 
+    display: flex
+    align-items: center
+    color: #fff
+    font-weight: bold
+    text-decoration: none
+
+
+.dribbble 
+    width: 20px
+    height: 20px
+    margin: 0 5px
+
+
+@media screen and (max-width: 520px) 
+  .screen-body 
+      flex-direction: column
+  
+
+  .screen-body-item.left 
+      margin-bottom: 30px
+  
+
+  .app-title 
+      flex-direction: row
+  
+
+  .app-title span 
+      margin-right: 12px
+  
+
+  .app-title:after 
+      display: none
+  
+
+
+@media screen and (max-width: 600px) 
+  .screen-body 
+      padding: 40px
+  
+
+  .screen-body-item 
+      padding: 0
+  
+//fin de contact
