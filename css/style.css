@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  background-color: #000 !important;
 }
 
 #tout {
@@ -11,12 +12,17 @@ body {
 }
 
 #WELCOME {
-  background-color: #fff;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   overflow: hidden;
+}
+
+canvas {
+  position: absolute;
+  opacity: 1;
 }
 
 #WELCOME img {
@@ -31,7 +37,7 @@ body {
   width: 50%;
   margin: 0;
   padding: 5%;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 .battant {
@@ -42,7 +48,7 @@ body {
 
 .portailG {
   position: relative;
-  left: -73%;
+  left: -73.3%;
 }
 
 #fondd1 {
@@ -64,7 +70,7 @@ body {
 
 .portailD {
   position: relative;
-  left: 0%;
+  left: -1%;
 }
 
 #fond2 {
@@ -94,33 +100,63 @@ body {
 }
 
 .text-front {
-  -webkit-animation: text-flicker-in-glow 5s linear both;
-          animation: text-flicker-in-glow 5s linear both;
-  animation: text-flicker-in-glow 5s linear both;
+  -webkit-animation: text-flicker-in-glow 2s linear both;
+          animation: text-flicker-in-glow 2s linear both;
 }
 
 .box_entrer {
   position: absolute;
-  top: 45%;
-  left: 45%;
+  justify-content: center;
+  top: 40%;
+  left: 44%;
+  margin: 20px;
+  padding: 0px;
+  border-style: none;
+  style: none;
+  border-radius: 50%;
+  border: 3px solid #161831;
+  -webkit-animation: 1s linear infinite alternate boxMagic;
+          animation: 1s linear infinite alternate boxMagic;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+  background-color: #161831;
+}
+
+.box_entrer p {
+  position: absolute;
+  left: 40px;
+  top: 60px;
+  font-size: 1.2rem;
+  color: #17d4d4;
+  -webkit-animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+          animation: fade-in 2s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation-delay: 6s;
+          animation-delay: 6s;
+}
+
+svg {
+  position: relative;
   width: 150px;
   height: 150px;
-  margin: 10px;
+  top: -5px;
 }
 
 #cercle {
   position: absolute;
   cx: 70px;
-  cy: 70px;
-  r: 70px;
+  cy: 80px;
+  r: 65px;
   fill: none;
   stroke: #0c7bd0;
   stroke-width: 10px;
   transform: translate(5px);
   stroke-dasharray: 440;
   stroke-dashoffset: 440;
-  -webkit-animation: circle 2s;
-          animation: circle 2s;
+  stroke-linecap: round;
+  -webkit-animation: circle 4s forwards;
+          animation: circle 4s forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .tete {
@@ -180,6 +216,7 @@ span:hover {
   color: #faebd7;
   text-shadow: 0 0 0 #faebd7;
   -webkit-animation: loading 1s ease-in-out infinite alternate;
+          animation: loading 1s ease-in-out infinite alternate;
 }
 
 .honeycomb {

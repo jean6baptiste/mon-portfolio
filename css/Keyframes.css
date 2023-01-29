@@ -1,5 +1,5 @@
 /*Animation de nom */
-@-webkit-keyframes loading {
+@keyframes loading {
     to {
       text-shadow: 20px 0 70px #ff0266;
       color: #ff0266;
@@ -201,4 +201,62 @@
   to {
     stroke-dashoffset: 1;
   }
+}
+
+@keyframes button {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Border bouton */
+@keyframes boxMagic {
+
+    from {
+
+        box-shadow: 
+
+        0 0 0 #feac5e,
+
+        0 0 0 #c779d0,
+
+        0 0 0 #4bc0c8,
+
+        0 0 0 #42db75;
+
+    }
+
+    to {
+        box-shadow: 
+
+        0 -10px 0 #feac5e,
+
+        -10px 0 0 #c779d0,
+
+        0 10px 0 #4bc0c8,
+
+        10px 0 0 #42db75;
+    }
+}
+
+@keyframes spinning {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }

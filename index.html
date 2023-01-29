@@ -8,14 +8,15 @@
         <link rel="stylesheet" type="text/css"  href="css/init.css">
         <link rel="stylesheet" type="text/css"  href="css/style.css">
         <link rel="stylesheet" type="text/css"  href="css/Keyframes.css">
-        <script src="js/init.js" defer></script>
+        <script src="js/welBg.js" defer></script>
     </head>
     <body>
         <section id="WELCOME">
+            <canvas id="canvas"></canvas>
             <figure id="portail">
                 <section class="portailG battant">
                     <img src="assets/acceuil/FondP1.png" id="fondd1">
-                    <img src="assets/acceuil/Fil1.png" id="fil1">
+                    <img src="assets/acceuil/Fil1.png" class="loading" id="fil1">
                     <img src="assets/acceuil/Décor1.png" id="decor1">
                 </section>
                 <section class="portailD battant">
@@ -27,9 +28,12 @@
             <figure class="text-front">
                     <img src="assets/acceuil/Front end.png">
             </figure>
-            <svg class="box_entrer">
-                <circle  id="cercle"></circle>
-            </svg>
+            <button class="box_entrer">
+                <svg>
+                    <circle id="cercle"></circle>
+                    <p>CLICK</p>
+                </svg>
+            </button>
         </section>
         <div id="tout">
             <header class="tete">
