@@ -6,10 +6,180 @@ body {
   justify-content: center;
 }
 
+#tout {
+  display: none;
+}
+
+#WELCOME {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#WELCOME img {
+  width: auto;
+  height: 1000px;
+}
+
+#portail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+  margin: 0;
+  padding: 5%;
+  opacity: 0.5;
+}
+
+.battant {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+}
+
+.portailG {
+  position: relative;
+  left: -73%;
+}
+
+#fondd1 {
+  position: relative;
+  top: 1020px;
+}
+
+#fil1 {
+  position: relative;
+  height: 1020px !important;
+}
+
+#decor1 {
+  position: relative;
+  top: -1000px;
+  left: -57px;
+  height: 1000px !important;
+}
+
+.portailD {
+  position: relative;
+  left: 0%;
+}
+
+#fond2 {
+  position: relative;
+  top: 1020px;
+}
+
+#fil2 {
+  position: relative;
+  right: -25%;
+  height: 1020px !important;
+}
+
+#decor2 {
+  position: relative;
+  top: -1000px;
+  right: -2px;
+  height: 1000px !important;
+}
+
+.text-front img {
+  position: absolute;
+  top: 60vh;
+  left: 58%;
+  width: 25% !important;
+  height: auto !important;
+}
+
+.text-front {
+  -webkit-animation: text-flicker-in-glow 5s linear both;
+          animation: text-flicker-in-glow 5s linear both;
+  animation: text-flicker-in-glow 5s linear both;
+}
+
+.box_entrer {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+#cercle {
+  position: absolute;
+  cx: 70px;
+  cy: 70px;
+  r: 70px;
+  fill: none;
+  stroke: #0c7bd0;
+  stroke-width: 10px;
+  transform: translate(5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  -webkit-animation: circle 2s;
+          animation: circle 2s;
+}
+
 .tete {
   background-color: #000;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
+}
+
+name {
+  font-family: "ROBOTO", sans-serif;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.name h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 5vw;
+  margin: 0;
+  padding-bottom: 0.9rem;
+  letter-spacing: 0.5rem;
+  color: #03dac6;
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+h1:hover {
+  transform: translate3d(0, -10px, 22px);
+  color: #ff0266;
+}
+
+h3.span {
+  font-size: 2vw;
+  letter-spacing: 0.7em;
+  font-family: "ROBOTO", sans-serif;
+  font-weight: 300;
+  color: #faebd7;
+  z-index: 4;
+}
+
+span:hover {
+  color: #ff0266;
+  font-weight: 500;
+  font-size: 2.2vw;
+}
+
+.loader span {
+  color: #faebd7;
+  text-shadow: 0 0 0 #faebd7;
+  -webkit-animation: loading 1s ease-in-out infinite alternate;
 }
 
 .honeycomb {
