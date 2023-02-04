@@ -25,74 +25,130 @@ body
 #WELCOME
   background-color: $color_black
   display: flex
-  justify-content: center
+  flex-direction: row
   align-items: center
+  justify-content: center
   height: 100vh
   overflow: hidden
-canvas 
-  position: absolute
+  width: 100%
+///canvas
+canvas
   opacity: 1
-
-#WELCOME img
-  width: auto
-  height: 1000px
-
+.canVasBg
+  position: absolute
+  overflow: hidden
+  width: 100%
+  height: 100vh
+  z-index: 0
+  //border-radius: 10% 10% 10% 10%
+//fin
 #portail
+  position: relative
+  top: 15px
   display: flex
   flex-direction: row
   justify-content: center
-  width: 50%
-  margin: 0
-  padding: 5%
-  opacity: 1
-
-.battant
-  width: 50%
+  width: 100%
+  height: 100vh
   margin: 0
   padding: 0
-//batan gauche
+.battant
+  display: flex
+  flex-direction: row
+  width: 100%
+  opacity: 0.9
+  margin: 0
+  padding: 0
+.battant img
+  position: absolute
+  width: 50%
+//filet gauche
+#filG
+  width:100% 
+  height: auto
+  position: relative
+  top: -1.7%
+.s0 
+    fill: none
+    stroke: #53aedd 
+.s1 
+    fill: none
+    stroke: #53aedd
+    stroke-width: 2  
+.s2 
+    fill: none
+    stroke: #53aedd
+    stroke-width: .8  
+.s3 
+    fill: none
+    stroke: #53aedd
+    stroke-width: 3  
+.s4 
+    fill: #53aedd
+    stroke: #53aedd  
+.s5 
+    fill: none
+    stroke: #53aedd
+    stroke-width: 4  
+.s6
+    fill: none
+    stroke: #53aedd
+    stroke-width: .5 
+//fin
+//filD
+#filD
+  width:100% 
+  height: auto
+  position: relative
+  top: -1.7%
+  left: 2%
+.s0  
+  fill: none
+  stroke: #53aedd 
+.s1  
+  fill: none
+  stroke: #53aedd
+  stroke-width: 2 
+.s2  
+  fill: none
+  stroke: #53aedd
+  stroke-width: .8 
+.s3  
+  fill: none
+  stroke: #53aedd
+  stroke-width: 3 
+.s4  
+  fill: #53aedd
+  stroke: #53aedd 
+.s5  
+  fill: none
+  stroke: #53aedd
+  stroke-width: 4 
+.s6  
+  fill: none
+  stroke: #53aedd
+  stroke-width: .5 
+                      
+//fin
+//portailG
 .portailG
-  position: relative
-  left: -73.3%
-#fondd1
-  position: relative
-  top:1020px
-#fil1
-  position: relative
-  height: 1020px !important
-#fil1
-  //box-shadow: inset 5px 5px 20px #00c2cb, inset 5px 5px 20px #fff
-#decor1
-  position: relative
-  top:-1000px
-  left: -57px
-  height: 1000px !important
-//fin battan
-//batan droit
+  left: 2px
+//fin
+//portailG
 .portailD
-  position: relative
-  left: -1%
-#fond2
-  position: relative
-  top:1020px
-#fil2
-  position: relative
-  right: -25%
-  height: 1020px !important
-#decor2
-  position: relative
-  top:-1000px
-  right: -2px
-  height: 1000px !important
-//fin battan
-//FIN Portaille
+  margin: 0px 0px 0px -5.5px
+  right: 2px
+//portailG
+  margin: 0px -5px 0px 0px
+  left: 2px
+//fin
 // front
 .text-front img
   position: absolute
   top: 60vh
   left: 58%
-  width: 25% !important
-  height: auto !important
+  width: 25%
+  height: auto
 .text-front
   animation: text-flicker-in-glow 2s linear both
 // fin 

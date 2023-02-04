@@ -225,3 +225,59 @@ body {
     margin: 0 $hexagon-margin/2;
   }
 }
+
+#portail
+  position: relative
+  top: 0
+  left: 0
+  display: flex
+  flex-direction: row
+  justify-content: center
+  width: 50%
+  margin: 0
+  padding: 5%
+  opacity: 1
+  top: -10px
+
+.battant
+  width: 50%
+  margin: 0
+  padding: 0
+//batan gauche
+.portailG
+  position: relative
+  left: -73.3%
+#fondd1
+  position: relative
+  top:1020px
+  opacity: 0.8
+#fil1
+  position: relative
+  height: 1020px !important
+#fil1
+  //box-shadow: inset 5px 5px 20px #00c2cb, inset 5px 5px 20px #fff
+#decor1
+  position: relative
+  top:-1000px
+  left: -57px
+  height: 1000px !important
+//fin battan
+//batan droit
+.portailD
+  position: relative
+  left: -1%
+#fond2
+  position: relative
+  top:1020px
+  opacity: 0.8
+#fil2
+  position: relative
+  right: -25%
+  height: 1020px !important
+#decor2
+  position: relative
+  top:-1000px
+  right: -2px
+  height: 1000px !important
+//fin battan
+//FIN Portaille
