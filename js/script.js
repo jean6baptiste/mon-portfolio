@@ -1,11 +1,13 @@
-let start = documentquerySelector(".box_enter")
-let charge = documentquerySelector("#cercle")
-let contenu = documentquerySelector("#tout")
-let bienv = documentquerySelector("#WELCOME")
-let fincharge = charge.style.stroke-dashoffset
-start.addEventListener("click", () => {
-    //bienv.style.stroke-dashoffset =
-    bienv.style.display = "none"
-    contenu.style.display = "block"
+let entrer = document.querySelector("#box_entrer")
+let charge = document.querySelector("cercle")
+let contenu = document.querySelector("#tout")
+let bienv = document.querySelector("#WELCOME")
 
-})
+entrer.addEventListener('click', actionB);
+
+function actionB() 
+{
+  bienv.style.display = 'none';
+  console.log("BONJOUR")
+  contenu.style.display = 'block';
+}

@@ -9,6 +9,8 @@ body {
 
 #tout {
   display: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 #WELCOME {
@@ -176,7 +178,7 @@ canvas {
   animation: text-flicker-in-glow 2s linear both;
 }
 
-.box_entrer {
+#box_entrer {
   position: absolute;
   justify-content: center;
   top: 40%;
@@ -192,7 +194,7 @@ canvas {
   background-color: #161831;
 }
 
-.box_entrer p {
+#box_entrer p {
   position: absolute;
   left: 40px;
   top: 60px;

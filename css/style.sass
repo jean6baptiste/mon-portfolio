@@ -22,6 +22,8 @@ body
 //portaille
 #tout
     display: none
+    margin: 0px
+    padding: 0px
 #WELCOME
   background-color: $color_black
   display: flex
@@ -153,7 +155,7 @@ canvas
   animation: text-flicker-in-glow 2s linear both
 // fin 
 //bouton entrer
-.box_entrer
+#box_entrer
   position: absolute
   justify-content: center
   top: 40%
@@ -167,7 +169,7 @@ canvas
   animation: 1s linear infinite alternate boxMagic
   animation-delay: 6s
   background-color: #161831
-.box_entrer p
+#box_entrer p
   position: absolute
   left: 40px
   top: 60px
@@ -195,6 +197,7 @@ svg
   animation: circle 4s forwards
   animation-delay: 2.5s
 //fin
+  //=======================================================
 //ENTETE
 .tete
   background-color: #000
